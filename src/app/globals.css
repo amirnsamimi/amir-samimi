@@ -2,32 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/** NEXT HAS GOOGLE FONTS PRE INSTALLED **/
+@layer base {
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/OpenSans-Light.ttf") format('ttf');
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/OpenSans-LightItalic.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/OpenSans-Regular.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/OpenSans-Italic.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/OpenSans-Medium.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/OpenSans-MediumItalic.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/OpenSans-SemiBold.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/OpenSans-SemiBoldItalic.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("/fonts/OpenSans-Bold.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: bolder;
+    font-display: swap;
+    src: url("/fonts/OpenSans-BoldItalic.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: bolder;
+    font-display: swap;
+    src: url("/fonts/OpenSans-ExtraBold.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'OpenSans';
+    font-style: italic;
+    font-weight: bolder;
+    font-display: swap;
+    src: url("/fonts/OpenSans-ExtraBoldItalic.ttf") format('ttf');
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .font-OpenSans{
+
   }
 }
